@@ -4,9 +4,10 @@ player_wins = 0
 computer_wins = 0
 
 print("Let's play rock, paper, scissors!")
+username = input("What's your name? ")
 
 while player_wins < 2 and computer_wins < 2:
-  player_choice = input("Choose wisely : rock, paper, or scissors? ").lower()
+  player_choice = input(f"Choose wisely {username} : rock, paper, or scissors? ").lower()
   choices = ["rock", "paper", "scissors"]
   computer_choice = random.choice(choices)
   print(f"Computer chose: {computer_choice}")
